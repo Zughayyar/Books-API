@@ -81,6 +81,18 @@ public class Book {
         this.numberOfPages = numberOfPages;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
     @PrePersist
     protected void onCreate() {
         this.createdAt = new Date();
