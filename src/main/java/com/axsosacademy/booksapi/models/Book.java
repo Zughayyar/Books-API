@@ -25,11 +25,11 @@ public class Book {
     private String description;
 
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 40, message = "Language must be at least 3 characters")
     private String language;
 
     @NotNull
-    @Min(100)
+    @Min(value = 100, message = "Must be at least 100 pages.")
     private Integer numberOfPages;
 
     @Column(updatable = false)

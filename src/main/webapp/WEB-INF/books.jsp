@@ -13,6 +13,7 @@
 </head>
 <body>
     <h1>All Books</h1>
+    <a href="/books/new" class="btn btn-secondary">Add New Book</a>
     <div class="books-table">
         <table class="table table-hover">
             <thead>
